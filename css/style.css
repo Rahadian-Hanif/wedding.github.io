@@ -152,7 +152,7 @@ figure {
 .fh5co-hero {
   position: relative;
   height: 100%;
-  width: 100%;
+ 
 }
 
 @media screen and (max-width: 768px) {
@@ -160,13 +160,10 @@ figure {
   .fh5co-hero {
     height: 700px;
   }
-}
-
-@media only screen and (max-width: 600px) {
   .fh5co-cover{
-    background-position: 670px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center !important;
+    background-size: cover ;
   }
 }
 
@@ -188,7 +185,7 @@ figure {
 
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
