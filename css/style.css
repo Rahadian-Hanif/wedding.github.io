@@ -163,7 +163,7 @@ figure {
   .fh5co-cover{
     background-repeat:no-repeat;
     background-position: center center !important;
-    background-size: cover ;
+    background-size: contain ;
   }
 }
 
