@@ -248,10 +248,32 @@
 	<!-- END fh5co-page -->
 
 	</div>
+	</iframe> 
+	<audio id="myAudio" autoplay loop>
+		<source src="audio/audio1.mp3" type="audio/mpeg">
+	</audio>
+	
+	<button class="music" id="play" onclick="playAudio()" type="button"><i class="fa-solid fa-volume-high"></i></button>
+	
+
 	<!-- END fh5co-wrapper -->
 	<!-- jQuery -->
 	<script src="dist/scripts.min.js"></script>
-	<!-- <script src="js/main.js"></script> -->
+	<script>
+		var x = document.getElementById("myAudio"); 
+		
+		function playAudio() { 
+		  x.play();
+		  document.getElementById('play').innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+		  document.getElementById('play').setAttribute('onclick','pauseAudio()')
+		} 
+		
+		function pauseAudio() { 
+		  x.pause();
+		  document.getElementById('play').innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+		  document.getElementById('play').setAttribute('onclick','playAudio()')
+		} 
+	</script>
 	</body>
 </html>
 
