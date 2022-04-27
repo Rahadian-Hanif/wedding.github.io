@@ -7,7 +7,6 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Weding Invitation Freddy & Dita</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<script src="https://kit.fontawesome.com/2ade3c4524.js" crossorigin="anonymous"></script>
@@ -27,16 +26,26 @@
 	 -->
 
   	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<!-- Primary Meta Tags -->
+	<title>The Wedding of Freddy and Dita</title>
+	<meta name="title" content="The Wedding of Freddy and Dita">
+	<meta name="description" content="Minggu, 15 Mei 2022">
 
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://bit.ly/Freddy-and-Dita-Invitation">
+	<meta property="og:title" content="The Wedding of Freddy and Dita">
+	<meta property="og:description" content="Minggu, 15 Mei 2022">
+	<meta property="og:image" content="images/meta.jpeg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://bit.ly/Freddy-and-Dita-Invitation">
+	<meta property="twitter:title" content="The Wedding of Freddy and Dita">
+	<meta property="twitter:description" content="Minggu, 15 Mei 2022">
+	<meta property="twitter:image" content="images/meta.jpeg">
+
+	
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	
@@ -248,7 +257,13 @@
 	<!-- END fh5co-page -->
 
 	</div>
-	</iframe> 
+	<div id="myNav" class="overlay">
+		<div class="overlay-content">
+			<img src="images/PROTOKOL KESEHATAN.svg" width="300px" height="400px" alt=""> <br>
+			<button class="closebtn" onclick="closeNav()">Close</button>
+		</div>
+	</div>
+
 	<audio id="myAudio" autoplay loop>
 		<source src="audio/audio1.mp3" type="audio/mpeg">
 	</audio>
@@ -272,7 +287,17 @@
 		  x.pause();
 		  document.getElementById('play').innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
 		  document.getElementById('play').setAttribute('onclick','playAudio()')
-		} 
+		}
+
+		window.onload = function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+		
+		function closeNav() {
+			playAudio();
+		  	document.getElementById("myNav").style.width = "0%";
+		  
+		}
 	</script>
 	</body>
 </html>
